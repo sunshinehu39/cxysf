@@ -1,0 +1,20 @@
+<swiper class='swiper'  indicator-dots="{{indicatorDots}}" vertical='true' circular='true'
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{key}}">
+    <swiper-item>
+      <image class='swiperimg' mode='widthFix' src="{{item}}"  />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='center ma'>
+  <image class='yzp' src='/imgs/YZP1.jpg' ></image>
+</view>
+
+<view class='text white center'>
+  <text decode="{{true}}">&nbsp;微信iori61012 </text>
+</view>
+
+<view class='center ma2'>
+  <icon bindtap='call' class='iconfont icon-tel3 blue' style="font-size:70rpx;"></icon>
+</view>

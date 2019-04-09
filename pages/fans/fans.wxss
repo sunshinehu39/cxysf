@@ -1,0 +1,26 @@
+.name {
+  margin-top: 70rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+}
+
+.info {
+  font-size: 25rpx;
+  line-height: 50rpx;
+  margin-left: 10rpx;
+}
+
+
+.focus {
+  padding: 0rpx 20rpx;
+  position: absolute;
+  right: 20rpx;
+  line-height: 97px;
+  color: red;
+}
+
+.addsize {
+  font-size: 20rpx;
+  margin-top: -30rpx;
+}
+

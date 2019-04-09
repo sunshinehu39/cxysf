@@ -1,0 +1,53 @@
+{
+  "pages": [
+        "pages/call/call",
+    "pages/class/class",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/video/video",
+    "pages/remark/remark",
+    "pages/data/data",
+    "pages/concern/concern",
+    "pages/fans/fans",
+    "pages/my/my",
+    "pages/buy/buy"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0997F7",
+    "navigationBarTitleText": "楚小月书法课",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "backgroundColor": "#fff",
+    "selectedColor": "#0997F7",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "imgs/index2.png",
+        "selectedIconPath": "imgs/index.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "上课",
+        "iconPath": "imgs/class2.png",
+        "selectedIconPath": "imgs/class.png",
+        "pagePath": "pages/class/class"
+      },
+      {
+        "text": "我的",
+        "iconPath": "imgs/my2.png",
+        "selectedIconPath": "imgs/my.png",
+        "pagePath": "pages/my/my"
+      },
+      {
+        "text": "联系我们",
+        "iconPath": "imgs/buy2.png",
+        "selectedIconPath": "imgs/buy.png",
+        "pagePath": "pages/call/call"
+      }
+    ]
+  }
+}

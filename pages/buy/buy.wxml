@@ -1,0 +1,14 @@
+<!--pages/payment/payment.wxml-->
+
+<image class='pay1' src='/imgs/pay1.png' ></image>
+<view class='minifont'>
+  <text>公共课：楚小月书法课-笔画\n</text>
+</view>
+<view class='payfont'>
+  <text>￥：128.00\n</text>
+</view>
+
+<view class='minifont'>
+  <text>请添加老师微信购买\n 微信：iori61012\n电话：15828160245</text>
+</view>
+<image class='yzp' src='/imgs/YZP1.jpg' ></image>

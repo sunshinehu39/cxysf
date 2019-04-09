@@ -1,0 +1,151 @@
+.listbox{
+  border-top: solid 1rpx rgb(175, 166, 166);
+  margin-top: 30rpx
+}
+
+.list{
+  border-bottom: solid 1rpx #bfbfbf;
+  padding: 0rpx 0rpx;
+  line-height: 130rpx;
+}
+
+.num{
+  color: gray;
+  font-size: 30rpx;
+}
+
+.r{
+  float: right;
+  margin-top: -10rpx;
+    color: gray;
+}
+
+/* 折叠抽屉样式 */
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+
+page{
+    background: #fff;
+}
+.swiper-img{
+    width: 750rpx;
+    height: 300rpx;
+}
+.cells .item .cdn{
+    position: relative;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx 30rpx;
+    background-color: #fff;
+    font-size: 32rpx;
+}
+.cells .item .cdn::after{
+    content:'';position:absolute;top:0;left:0;width:200%;height:200%;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 0;transform-origin:0 0;pointer-events:none;box-sizing:border-box;border-bottom:0 solid #f0f0f0;border-width:1px
+}
+ 
+.img{
+    height: 44rpx;
+    width: 44rpx;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 82rpx;
+}
+ 
+.icon_img{
+    height:12rpx;
+    width:20rpx;
+}
+ 
+ 
+ 
+.content{
+    margin-left: 15rpx;
+    line-height: 82rpx;
+    vertical-align: middle;
+}
+ 
+.discount{
+    line-height: 82rpx;
+    vertical-align: middle;
+    color:orange;
+    box-sizing: border-box;
+    padding-right: 20rpx;
+}
+ 
+ 
+.video-item{
+    display: flex;
+    flex-direction: column;
+}
+.buys{
+    width:750rpx;
+    height: 141.6rpx;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20rpx 30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#FAFAFA;
+}
+.buys::after {
+    content:'';position:absolute;top:0;left:0;width:200%;height:200%;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 0;transform-origin:0 0;pointer-events:none;box-sizing:border-box;
+    border-bottom:0 solid #DCDCDC;border-width:1px;
+}
+.v1{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ 
+.new-price{
+    margin-left: 15rpx;
+    font-size: 32rpx;
+    color: #3B3B3B;
+}
+
+.oldPrice{
+    text-decoration:line-through;
+    font-size: 24rpx;
+    color: #B0B0B0;
+    margin-left: 20rpx;
+}
+.buy{
+    font-size: 24rpx;
+    color: #2DAF73;
+    text-align: center;
+    width: 80rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+.buy::after{
+    content:'';position:absolute;top:0;left:0;width:200%;height:200%;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 0;transform-origin:0 0;pointer-events:none;box-sizing:border-box;border:0 solid #2DAF73;border-width:1px;border-radius:8rpx
+}
+ 
+.shopping{
+    width: 128rpx;
+    height: 56rpx;
+    line-height: 56rpx;
+    position: relative;
+    padding-right: 20rpx;
+    font-size: 28rpx;
+    color: #2DAF73;
+    text-align: center;
+}

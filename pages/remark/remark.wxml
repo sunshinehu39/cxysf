@@ -1,0 +1,39 @@
+  <view class=' x viewweek'>
+        <view class='wk x viewweek'>
+                    <view>
+                    <image class='mini'  src='https://wx.qlogo.cn/mmopen/vi_32/d6Py7fftiaNsZgYfYwTIQUoKDHbTYLpAj29yFnMhSzqxBoLFDq49iasIYzU7sMxb5xhVHRlNiae5xiaiboBGzd9ahDQ/132'></image>
+                    </view>
+                <view class='y'>
+                    <view class='font2'>
+                      <text>朝阳</text>
+                    </view>
+                    <view class='font3'>
+                      <text>获取课程名</text>
+                      <text>1小时25分钟前</text>
+                    </view>
+                </view>
+
+        </view>
+            <!-- <view  class='dianzan'> -->
+              <icon class='iconfont icon-flower1 love'></icon>
+            <!-- </view> -->
+            <text class='font2 dianzan'> 988</text>
+</view>
+
+<!-- 开始放图片 -->
+<view >
+<image  src='/imgs/a.jpg' mode='aspectFit'></image>
+</view>
+
+<!-- 老师点评 -->
+<view class='x viewweek bottom'>
+    <icon class='iconfont icon-moon2 mleft2'></icon>
+    <view class='y'>
+      <text class='font2 '>小月老师</text>
+      <text class='font3 '>1小时25分钟前</text>
+    </view>
+    <div class="chat-bubble chat-bubble-left mleft1">
+          收听老师点评
+          <icon class='iconfont icon-yuyin yuyin'></icon>  
+    </div>
+</view>

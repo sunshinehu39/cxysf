@@ -1,0 +1,179 @@
+<!-- 课程视频 -->
+<!-- <video src="{{cUrl}}" class='video' controls > </video> -->
+ <video wx:if="{{vshow}}" src="http://pg0lxz3b1.bkt.clouddn.com/%E4%BD%A0f.mp4" class='video' controls > </video>
+
+<!-- 点评表单 -->
+<view animation="{{animationData}}" class='form drawer_box'   wx:if="{{showcommentform}}"> 
+    <form  bindsubmit="comment" bindreset="formReset">
+
+  <!-- <view> -->
+      <input name='content'  placeholder="评语" class='textarea'></input> 
+  <!-- </view> -->
+
+      <!-- 录音 -->
+    <view>
+          <!-- 预览 -->
+          <view wx:if="{{voice}}">
+            <view class='yy_box'>
+              <view class='yy_box_bg' bindtap='play'>
+                <view class="yy_box_icon {{onPlay?'audio-animation':''}}"></view>
+              </view>
+              <text>{{playDuration}}"</text>
+            </view>
+          </view>
+
+          <!-- 录音按钮 -->
+          <button bindtouchstart='recorderS' bindtouchend='recorderE'  class='voicebnt'><icon  class="iconfont icon-voice voiceicon" ><text  decode="{{true}}">&nbsp;&nbsp;&nbsp;语音点评（长按）</text></icon></button> 
+
+      </view>
+
+    <!-- 配图 -->
+    <view class="page">
+        <view class="page__bd">
+            <view class="weui-cells">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">
+                        <view class="weui-uploader">
+                            <view class="weui-uploader__hd">
+                                <view class="weui-uploader__title">配图</view>
+                                <view class="weui-uploader__info">{{img.length}}/1</view>
+                            </view>
+                            <view class="weui-uploader__bd">
+                                <view class="weui-uploader__files" id="uploaderFiles">
+                                    <block wx:for="{{img}}" wx:key="*this">
+                                        <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                        
+                                            <image class="weui-uploader__img" data-index="{{index}}" src="{{item}}" mode="aspectFill" />
+                      <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg" class="iconfont imgdel">-</view>
+                                        
+                                        </view>
+                                    </block>
+                                </view>
+
+                                <view wx:if="{{img.length < 1}}" class="weui-uploader__input-box">
+                                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                                </view>
+                                
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+      <view class='banner x'>
+          <button class='noradius' bindtap="hidecommentform"  formType="button">取消</button>
+          <button id='2' class='active noradius' formType="submit">提交</button>
+      </view>
+    </form>
+</view>
+
+<!-- 作业表单 -->
+<view animation="{{animationData}}" class='form drawer_box zybox'  wx:if="{{show}}"> 
+  <form  bindsubmit="submitwork" bindreset="formReset">
+
+    <input name='remark' class='tcenter'  placeholder="想对老师说点啥？" />
+
+  <view class="page">
+      <view class="page__bd">
+          <view class="weui-cells">
+              <view class="weui-cell">
+                  <view class="weui-cell__bd">
+                      <view class="weui-uploader">
+                          <view class="weui-uploader__hd">
+                              <view class="weui-uploader__title">作业照片</view>
+                              <view class="weui-uploader__info">{{img.length}}/1</view>
+                          </view>
+                          <view class="weui-uploader__bd">
+                              <view class="weui-uploader__files" id="uploaderFiles">
+                                  <block wx:for="{{img}}" wx:key="*this">
+                                      <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                      
+                                          <image class="weui-uploader__img" data-index="{{index}}" src="{{item}}" mode="aspectFill" />
+                    <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg" class="iconfont imgdel">-</view>
+                                      
+                                      </view>
+                                  </block>
+                              </view>
+
+                              <view wx:if="{{img.length < 1}}" class="weui-uploader__input-box">
+                                  <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                              </view>
+                              
+                          </view>
+                      </view>
+                  </view>
+              </view>
+          </view>
+      </view>
+  </view>
+
+    <view class='banner x'>
+        <button class='noradius' bindtap="hideform"  formType="button">取消</button>
+        <button class='active noradius' formType="submit">提交</button>
+    </view>
+  </form>
+</view>
+
+<!-- 作业列表 -->
+<!-- <scroll-view scroll-y style="height:600rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}"> -->
+<view>
+  <view class='item'  wx:for="{{worklist}}" wx:key="{{key}}"  >
+    <!-- 基本信息 -->
+    <view class='x' >
+      <!-- 头像 -->
+      <view>
+        <view>
+          <image  class="userinfo-avatar mini" src='{{item.sid.avatarUrl}}'></image>
+        </view>
+      </view>
+
+      <view  class='y'>
+        <!-- 姓名 -->
+          <view class='name'><text>{{item.sid.nickName2}}</text></view>
+        <!-- 日期 -->
+          <view><text class='date'>{{item.pubtime2}}</text></view>
+      </view>
+      <!-- 点赞 -->
+
+      <view class='mark'>
+       <icon bindtap='delgoal' wx:if='{{item.choiceness}}' id="{{item.goal}}" class="iconfont icon-rjingxuan rjingxuan" ></icon>
+       <!-- <icon bindtap='delgoal' id="{{item.goal}}" class="iconfont icon-youxiu youxiu " ></icon>
+        <icon bindtap='delgoal' id="{{item.goal}}" class="iconfont icon-share green margin" ></icon> -->
+        <icon  class="iconfont icon-flower1 red margin" > <text class='num'> {{item.favnum}}</text></icon>
+      </view>
+    </view>
+
+    <!--留言-->
+    <view  class='content'>
+    {{item.remark}}
+    </view>
+
+    <!-- 作业照片 -->
+    <view> <image class='zuoye' src="{{item.workphoto}}" mode="aspectFit" /> </view> 
+
+    <view wx:if="{{item.sid.sid == sid}}" id='{{item.id}}' bindtap='delwork'  class='del'>删除</view>
+
+    <view bindtap="powerDrawer2" data-statu="open"  wx:if="{{role==2}}" id='{{item.content}}'  class='comment'>点评</view>
+
+    <!-- <view wx:if="{{item.myid==password}}" id='{{item.content}}' bindtap='del'  class='comment'>优秀</view>
+
+    <view wx:if="{{item.myid==password}}" id='{{item.content}}' bindtap='del'  class='comment'>精选置顶</view> -->
+
+  </view>
+</view>
+<!-- </scroll-view> -->
+
+<!-- 空白占位 -->
+<view class='block'>
+<text>占 \n 位</text>
+</view>
+
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showcommentform}}"></view>
+
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{show}}"></view>
+
+  <button  bindtap="powerDrawer" data-statu="open" class="weui-btn noradius bottom bluebnt"  >交作业，解锁下一课</button>

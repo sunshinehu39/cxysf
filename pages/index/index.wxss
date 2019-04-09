@@ -1,0 +1,289 @@
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t{
+  position: fixed;
+  z-index: 1000;
+   width: 190rpx;
+  height: 190rpx;
+  right: 20rpx;
+}
+
+.total {
+  width: 100%;
+  text-align: center;
+  font-size: 25rpx;
+  line-height: 120rpx;
+}
+
+.btnbox {
+  position: absolute; 
+  right: 50rpx;
+  margin-top: 25rpx;
+  height: 30rpx;
+}
+
+.btn{
+  color: white;
+  background:#0997F7 ;
+}
+
+.studyinfo {
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  height: 120rpx;
+}
+
+.studing {
+  margin: 30rpx;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  border-left: solid 20rpx #0997F7;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.dakanum {
+  color: gray;
+  font-size: 25rpx;
+  margin-left: 45rpx;
+  margin-top: 40rpx;
+}
+
+.update {
+  background: rgb(101, 193, 255);
+  color: white;
+  height: 40rpx;
+  width: 230rpx;
+  font-size: 20rpx;
+  border-radius: 98rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  text-align: right;
+  align-content: top;
+  padding-right:40rpx; 
+}
+
+.mini4 {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  font-size: 30rpx;
+  margin-top: 8rpx;
+    margin-right: 8rpx;
+
+  right: 220rpx;
+}
+
+
+
+.mini {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  font-size: 30rpx;
+  margin-top: 8rpx;
+    margin-right: 8rpx;
+}
+
+.flower {
+  margin-top: -60rpx;
+  margin-left: 220rpx;
+  background: white;
+  border-radius: 80rpx;
+  position: absolute;
+  z-index: 9;
+  font-size: 15rpx;
+  padding: 0rpx 5rpx 0rpx 5rpx;
+  width: 60rpx;
+  line-height: 30rpx;
+}
+
+.state {
+  margin-top: 8rpx;
+  width: 100%;
+}
+
+.minifont {
+  font-size: 25rpx;
+}
+
+.update2 {
+  height: 40rpx;
+  font-size: 20rpx;
+  margin-left: 10rpx;
+}
+
+.xzgc-pic {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 18rpx 18rpx 0 0;
+}
+
+.listbox {
+  margin: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list {
+  border-radius: 18rpx;
+  width: 300rpx;
+  height: 360rpx;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 28rpx 40rpx 28rpx;
+}
+
+.loveindex {
+  color: red;
+  margin-top: -8rpx;
+  font-size: 20rpx;
+}
+
+.time {
+  /* margin-left: 30rpx; */
+  color: rgb(192, 192, 192);
+  font-size:15rpx;
+}
+
+/* 轮播照片的样式 */
+.swiperimg{
+  margin: 30rpx 0;
+  width: 100%;
+}
+
+.swiper{
+  height: 450rpx;
+}
+
+
+.zuoshuxian{
+border-left: solid 15rpx blue;
+}
+
+.mini2 {
+  display: inline-flex;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  font-size: 30rpx;
+  margin-top: 8rpx;
+  margin-left: 15rpx;
+  margin-right: 10rpx;
+}
+
+.td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font1{
+  font-size: 30rpx;
+  /* margin-left: 30rpx; */
+}
+.font2{
+  font-size: 20rpx;
+}
+.font3{
+  font-size: 15rpx;
+  color: gray
+}
+
+.font30{
+  font-size: 30rpx;
+}
+
+.wk{
+  margin: 10rpx;
+  width: 20%;
+}
+
+.wk1{
+  margin: 20rpx;
+  background-color: ghostwhite;
+  border-radius: 20rpx;
+}
+
+.tp{
+  width: 710rpx;
+  height: 110rpx;
+}
+
+
+.font1{
+  font-size: 30rpx;
+  color: grey;
+}
+.font2{
+  font-size: 30rpx;
+  color:gray;
+}
+.font22{
+  font-size: 22rpx;
+  color:gainsboro;
+}
+.font4{
+  font-size: 25rpx;
+  color:gray;
+  margin: 30rpx 30rpx 30rpx 200rpx;
+}
+.font5{
+  font-size: 25rpx;
+  color:gray;
+  margin: 0rpx 0rpx 0rpx 130rpx;
+ 
+}
+.font6{
+  font-size: 22rpx;
+  color:white;
+  /* margin: 0rpx 0rpx 0rpx 130rpx; */
+ 
+}
+.jp{
+    margin: 10rpx 380rpx 10rpx 130rpx;
+    width: 380rpx;
+    height: 480rpx;
+}
+.flower2{
+  margin-top: 0rpx;
+  margin-left: 620rpx;
+  background: white;
+  border-radius: 80rpx;
+  position: absolute;
+  z-index: 9;
+  font-size: 25rpx;
+  padding: 0rpx 5rpx 0rpx 5rpx;
+}
+
+.line{
+  padding-bottom: 15rpx;
+ border-bottom:solid 1rpx gainsboro;
+}
+.linew{
+  position: absolute;
+  padding-bottom: 15rpx;
+  border-bottom:solid 10rpx white;
+}
+
+.mini3 {
+  display: inline-flex;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  font-size: 30rpx;
+  margin-top: 15rpx;
+  margin-left: 40rpx;
+  margin-right: 10rpx;
+}

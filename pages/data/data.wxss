@@ -1,0 +1,69 @@
+.modify-form form{
+    display:block;
+    padding:10rpx;
+
+}
+.label-list {
+    display: flex;
+    width: 100%;
+    height: 120rpx;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+}
+.place {
+    display: flex;
+    align-items: center;
+    font-size: 36rpx;
+} 
+.label-list .label {
+    color: #333;
+    font-size: 36rpx;
+}
+.label-list input{
+    padding-left: 20rpx;
+    flex: 1;
+    color: #333;
+    font-size: 36rpx;
+}
+.label-list image {
+    height: 80rpx;
+    width: 80rpx;
+}
+.label-lists {
+    justify-content: space-between;
+}
+.submit {
+    /* position: absolute; */
+    margin-top: 80rpx;
+    margin-right: 200rpx;
+    margin-left: 200rpx;
+    background-color: #ea3333;
+    color: #fff;
+}
+.radio-group label{
+    padding-left: 30rpx;
+    font-size: 36rpx;
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////城市选择////////////// */
+/* page{background-color: #efeff4;} */
+.tui-picker-content{
+  /* padding: 10rpx; */
+  text-align: center;
+}
+.tui-picker-name{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.tui-picker-detail{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  font-size: 35rpx;
+  padding: 0 10px;
+  overflow: hidden;
+}

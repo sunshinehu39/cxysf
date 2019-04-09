@@ -1,0 +1,25 @@
+/* pages/payment/payment.wxss */
+.pay1{
+  /* margin: 10rpx; */
+  width: 750rpx;
+  height: 340rpx;
+  }
+
+  .minifont{
+  font-size: 35rpx;
+  /* font-weight: 50; */
+  margin-left: 50rpx;
+}
+
+  .payfont{
+    color: blue;
+    font-size: 60rpx;
+    font-weight: 50;
+    margin-left: 50rpx;
+  }
+
+  .yzp{
+      width: 250rpx;
+      height: 250rpx;
+      margin: 10rpx 100rpx 10rpx 150rpx;
+  }

@@ -1,0 +1,102 @@
+
+ <view class='mytopbackground'>
+  <view class='x'>
+    <!-- 头像 -->
+    <view>
+    <open-data class='userinfo-avatar' type="userAvatarUrl"></open-data>
+    </view>
+
+    <!-- 昵称 -->
+    <view>
+        <view class='name'>
+        <open-data  type="userNickName"></open-data>        
+        <text>   </text>
+        <icon bindtap='edit' class='iconfont icon-bianji'></icon>
+        </view>
+
+        <view class='info'>
+        <text>四川 成都 | 一年级</text>
+        </view>
+    </view>
+  </view>
+
+  <view class='x info'>
+    <view class='total' bindtap='concern'>
+        <!-- <icon class='iconfont icon-loveshufa love'></icon> -->
+        <text> 关注 128</text>
+    </view>
+
+    <view class='total' bindtap='fans'>
+        <!-- <icon class='iconfont icon-loveshufa love'></icon> -->
+        <text> 粉丝 998</text>
+    </view>
+
+    <view class='total'>
+        <!-- <icon class='iconfont icon-loveshufa love'></icon> -->
+        <text> 天数 66</text>
+    </view>
+
+    <view class='total'>
+        <!-- <icon class='iconfont icon-loveshufa love'></icon> -->
+        <text> 上墙 15</text>
+    </view>
+
+  </view>
+
+
+<view class='mywork'> 
+  <text> 我的习作：（8）</text>
+</view>
+
+<!-- 作业列表 -->
+<view class='list'>
+  <view class='x' >
+    <image class='zuoye' src='/imgs/zy1.png' ></image>
+
+  <view class='y bl2 xcenter'>
+    <text> 课程内容：王</text>
+    <text> 2018年09月30日</text>
+    </view>
+
+    <view>
+        <view  class='dianzan'>
+          <icon class='iconfont icon-flower1 love'></icon>
+          <text> 988</text>
+        </view>
+    </view>
+  </view>
+
+  <view class='x' >
+    <image class='zuoye' src='/imgs/zy1.png' ></image>
+
+  <view class='y bl2 xcenter'>
+    <text> 课程内容：王</text>
+    <text> 2018年09月30日</text>
+    </view>
+
+    <view>
+        <view  class='dianzan'>
+          <icon class='iconfont icon-flower1 love'></icon>
+          <text> 988</text>
+        </view>
+    </view>
+  </view>
+
+  <view class='x' >
+    <image class='zuoye' src='/imgs/zy1.png' ></image>
+
+    <view class='y bl2 xcenter'>
+      <text> 课程内容：王</text>
+      <text> 2018年09月30日</text>
+      </view>
+
+    <view>
+        <view  class='dianzan'>
+          <icon class='iconfont icon-flower1 love'></icon>
+          <text > 988</text>
+        </view>
+    </view>
+  </view>
+</view>
+
+</view>

@@ -1,0 +1,67 @@
+.name {
+  margin-top: 70rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+}
+
+.info {
+  font-size: 25rpx;
+  line-height: 50rpx;
+  margin-left: 10rpx;
+
+}
+
+.love {
+  color: red;
+}
+
+.total {
+  width: 25%;
+  text-align: center;
+  font-size: 25rpx;
+  /* border: solid 1rpx gray */
+}
+
+.zuoye {
+  margin: 30rpx;
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.mywork {
+  line-height: 120rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+  font-size: 35rpx;
+  border-radius: 20rpx  20rpx    0 0  ;
+  background: white;
+  color: black;
+}
+
+.dianzan {
+  margin-top: 50rpx;
+}
+
+.r {
+  float: right;
+}
+
+.bl2 {
+  width: 50%;
+}
+
+.mytopbackground {
+  background-color: #0997f7;
+  color: white;
+}
+
+.list{
+  background: white;
+  color:black;
+}
+
+.iconfont{
+  margin: 15rpx;
+  font-size: 35rpx;
+}

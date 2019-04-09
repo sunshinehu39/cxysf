@@ -1,0 +1,138 @@
+.zuoshuxian {
+  border-left: solid 15rpx blue;
+}
+
+.mini {
+  display: inline-flex;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  font-size: 30rpx;
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font1 {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.font2 {
+  font-size: 30rpx;
+  /* color: gray */
+}
+
+.font3 {
+  font-size: 20rpx;
+  color: gray;
+}
+
+.wk {
+  margin: 10rpx;
+  width: 100%;
+}
+
+.wk1 {
+  margin: 20rpx;
+  background-color: ghostwhite;
+  border-radius: 20rpx;
+}
+
+.tp {
+  width: 710rpx;
+  height: 110rpx;
+}
+
+.viewweek {
+
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  /**其中子view垂直居中显示*/
+  align-items: center;
+
+}
+
+.bottom {
+  border-top: solid 1rpx #bfbfbf;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.love {
+  color: red;
+  font-size: 40rpx;
+  padding-bottom: 15rpx;
+  margin-right: 5rpx;
+}
+
+.dianzan {
+  margin-right: 20rpx;
+}
+
+.tupian {
+  width: 100%;
+  height: 850rpx;
+  border-bottom: solid 1rpx gainsboro;
+}
+
+.chat-bubble {
+  position: relative;
+  margin: 12rpx;
+  padding: 10rpx 40rpx;
+  word-break: break-all;
+  background: #0997f7;
+  color: white;
+  border: 1px solid #0997f7;
+  border-radius: 26rpx;
+  max-width: 980rpx;
+}
+
+
+
+.chat-bubble-left:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -32rpx;
+  top: 32rpx;
+  border: 20rpx solid;
+  border-color: transparent #0997f7 transparent transparent;
+}
+
+.chat-bubble-left:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -16rpx;
+  top: 40rpx;
+  border: 8rpx solid;
+  border-color: transparent #0997f7 transparent transparent;
+}
+
+.yuyin{
+  font-size: 35rpx;
+  padding-bottom: 15rpx;
+  margin-left: 70rpx;
+}
+
+.mleft{
+  margin-left: 30rpx;
+}
+.mleft1{
+  margin-left: 80rpx;
+}
+.mleft2{
+  margin: 20rpx;
+  color: #0997f7;
+}

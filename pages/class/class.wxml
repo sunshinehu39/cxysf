@@ -1,0 +1,45 @@
+<!-- 搜索 -->
+<view class="x xcenter">
+    <view class="search">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+    </view>
+</view>
+
+<!-- 课程列表--折叠抽屉 -->
+    <view class="item list"  wx:for="{{MemberList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+        <view bindtap="isOpen" class="cdn" data-index="{{idx}}">
+            <view>
+                <text class="content">{{item.CSname}}</text>
+            </view>
+            <!-- <view>
+                <text class="discount">{{item.total}}</text>
+            </view> -->
+        </view>
+        <view  hidden="{{item.hidden}}" >
+            <block wx:for="{{item.courselist}}"  wx:for-index="index" wx:for-item="items" wx:key="index">
+                <view class="buys" id='{{items.cid}}' data-CSid="{{item.id}}" data-c_id="{{items.id}}"  bindtap='video'>
+                    <view class="v1 " >
+                        <text class="new-price">第{{items.cid}}课—“ {{items.cName}} ”</text>
+                    </view>
+                    <view class="shopping">
+                        <text>{{items.PVnum}}人浏览 > </text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>

@@ -1,0 +1,8 @@
+.xcenter{
+  display: flex;
+  justify-content: center;
+}
+
+.center{
+  margin-top:30%;
+}
